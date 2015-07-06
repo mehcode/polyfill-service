@@ -1,0 +1,18 @@
+{
+	"browsers": {
+		"ie": "<11",
+		"firefox": "<300",
+		"opera": "<300",
+		"chrome": "<300",
+		"safari": "<300",
+		"ios_saf": "<300"
+	},
+	"dependencies": [],
+	"build": {
+		"minify": true
+	},
+	"license": "MIT",
+	"spec": "http://people.mozilla.org/~jorendorff/es6-draft.html#sec-symbol-objects",
+	"repo": "https://github.com/JakeChampion/core-js",
+	"docs": "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol"
+}
