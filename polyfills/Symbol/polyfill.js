@@ -1,8 +1,291 @@
-/**
- * core-js 0.9.18
- * https://github.com/zloirock/core-js
- * License: http://rock.mit-license.org
- * © 2015 Denis Pushkarev
- */
-!function(a){"use strict";var b=null,c=null;!function(c){function a(d){if(b[d])return b[d].exports;var e=b[d]={exports:{},id:d,loaded:!1};return c[d].call(e.exports,e,e.exports,a),e.loaded=!0,e.exports}var b={};return a.m=c,a.c=b,a.p="",a(0)}([function(b,c,a){a(1)},function(O,N,e){function G(a){var e=i[a]=b.set(k(f.prototype),H,a);return w&&l&&o(j,a,{configurable:!0,set:function(b){d(this,c)&&d(this[c],a)&&(this[c][a]=!1),o(this,a,r(1,b))}}),e}function t(a,b,e){return e&&d(i,b)?(e.enumerable?(d(a,c)&&a[c][b]&&(a[c][b]=!1),e=k(e,{enumerable:r(0,!1)})):(d(a,c)||g(a,c,r(1,{})),a[c][b]=!0),o(a,b,e)):g(a,b,e)}function q(a,b){J(a);for(var c,d=K(b=n(b)),e=0,f=d.length;f>e;)t(a,c=d[e++],b[c]);return a}function v(b,c){return c===a?k(b):q(k(b),c)}function M(a){var b=I.call(this,a);return b||!d(this,a)||!d(i,a)||d(this,c)&&this[c][a]?b:!0}function A(a,b){var e=z(a=n(a),b);return!e||!d(i,b)||d(a,c)&&a[c][b]||(e.enumerable=!0),e}function E(g){for(var a,b=D(n(g)),e=[],f=0;b.length>f;)d(i,a=b[f++])||a==c||e.push(a);return e}function F(f){for(var a,b=D(n(f)),c=[],e=0;b.length>e;)d(i,a=b[e++])&&c.push(i[a]);return c}var b=e(2),s=e(4).set,p=e(7),y=e(6),h=e(8),B=e(9),L=e(10),K=e(11),J=e(12).obj,j=Object.prototype,w=b.DESC,d=b.has,k=b.create,z=b.getDesc,g=b.setDesc,r=b.desc,C=e(13),D=C.get,n=b.toObject,f=b.g.Symbol,l=!1,H=p("tag"),c=p("hidden"),I={}.propertyIsEnumerable,m=y("symbol-registry"),i=y("symbols"),u=b.isFunction(f),o=w?function(){try{return k(g({},c,{get:function(){return g(this,c,{value:!1})[c]}}))[c]||g}catch(a){return function(c,a,d){var b=z(j,a);b&&delete j[a],g(c,a,d),b&&c!==j&&g(j,a,b)}}}():g;u||(f=function(){if(this instanceof f)throw TypeError("Symbol is not a constructor");return G(p(arguments[0]))},B(f.prototype,"toString",function(){return this[H]}),b.create=v,b.setDesc=t,b.getDesc=A,b.setDescs=q,b.getNames=C.get=E,b.getSymbols=F,b.DESC&&b.FW&&B(j,"propertyIsEnumerable",M,!0));var x={"for":function(a){return d(m,a+="")?m[a]:m[a]=f(a)},keyFor:function(a){return L(m,a)},useSetter:function(){l=!0},useSimple:function(){l=!1}};b.each.call("hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),function(a){var b=e(5)(a);x[a]=u?b:G(b)}),l=!0,h(h.G+h.W,{Symbol:f}),h(h.S,"Symbol",x),h(h.S+h.F*!u,"Object",{create:v,defineProperty:t,defineProperties:q,getOwnPropertyDescriptor:A,getOwnPropertyNames:E,getOwnPropertySymbols:F}),s(f,"Symbol"),s(Math,"Math",!0),s(b.g.JSON,"JSON",!0)},function(w,x,v){function e(a){return isNaN(a=+a)?0:(a>0?r:q)(a)}function h(a,b){return{enumerable:!(1&a),configurable:!(2&a),writable:!(4&a),value:b}}function i(a,b,c){return a[b]=c,a}function j(a){return k?function(b,c,d){return g.setDesc(b,c,h(a,d))}:i}function u(a){return null!==a&&("object"==typeof a||"function"==typeof a)}function t(a){return"function"==typeof a}function m(b){if(b==a)throw TypeError("Can't call method on  "+b);return b}var d="undefined"!=typeof self?self:Function("return this")(),o={},n=Object.defineProperty,p={}.hasOwnProperty,q=Math.ceil,r=Math.floor,s=Math.max,l=Math.min,k=!!function(){try{return 2==n({},"a",{get:function(){return 2}}).a}catch(a){}}(),f=j(1),g=w.exports=v(3)({g:d,core:o,html:d.document&&document.documentElement,isObject:u,isFunction:t,that:function(){return this},toInteger:e,toLength:function(a){return a>0?l(e(a),9007199254740991):0},toIndex:function(a,b){return a=e(a),0>a?s(a+b,0):l(a,b)},has:function(a,b){return p.call(a,b)},create:Object.create,getProto:Object.getPrototypeOf,DESC:k,desc:h,getDesc:Object.getOwnPropertyDescriptor,setDesc:n,setDescs:Object.defineProperties,getKeys:Object.keys,getNames:Object.getOwnPropertyNames,getSymbols:Object.getOwnPropertySymbols,assertDefined:m,ES5Object:Object,toObject:function(a){return g.ES5Object(m(a))},hide:f,def:j(0),set:d.Symbol?i:f,each:[].forEach});a!==b&&(b=o),a!==c&&(c=d)},function(a){a.exports=function(a){return a.FW=!0,a.path=a.g,a}},function(f,h,d){function b(a){return g.call(a).slice(8,-1)}var e=d(2),c=d(5)("toStringTag"),g={}.toString;b.classof=function(d){var e,f;return d==a?d===a?"Undefined":"Null":"string"==typeof(f=(e=Object(d))[c])?f:b(e)},b.set=function(a,b,d){a&&!e.has(a=d?a:a.prototype,c)&&e.hide(a,c,b)},f.exports=b},function(d,e,a){var b=a(2).g,c=a(6)("wks");d.exports=function(d){return c[d]||(c[d]=b.Symbol&&b.Symbol[d]||a(7).safe("Symbol."+d))}},function(d,f,e){var a=e(2),b="__core-js_shared__",c=a.g[b]||(a.g[b]={});d.exports=function(a){return c[a]||(c[a]={})}},function(c,f,d){function b(b){return"Symbol(".concat(b===a?"":b,")_",(++e+Math.random()).toString(36))}var e=0;b.safe=d(2).g.Symbol||b,c.exports=b},function(g,j,e){function f(a,b){return function(){return a.apply(b,arguments)}}function a(k,j,p){var g,m,e,q,o=k&a.G,r=k&a.P,l=o?b:k&a.S?b[j]||(b[j]={}):(b[j]||{}).prototype,n=o?d:d[j]||(d[j]={});o&&(p=j);for(g in p)m=!(k&a.F)&&l&&g in l,e=(m?l:p)[g],q=k&a.B&&m?f(e,b):r&&h(e)?f(Function.call,e):e,l&&!m&&i(l,g,e),n[g]!=e&&c.hide(n,g,q),r&&((n.prototype||(n.prototype={}))[g]=e)}var c=e(2),b=c.g,d=c.core,h=c.isFunction,i=e(9);b.core=d,a.F=1,a.G=2,a.S=4,a.P=8,a.B=16,a.W=32,g.exports=a},function(f,h,c){function d(e,c,d,h){if(a.isFunction(d)){var f=e[c];a.hide(d,b,f?f+"":g.replace(/hasOwnProperty/,c+"")),"name"in d||(d.name=c)}e===a.g?e[c]=d:(h||delete e[c],a.hide(e,c,d))}var a=c(2),g={}.hasOwnProperty+"",b=c(7).safe("src"),e=Function.toString;d(Function.prototype,"toString",function(){return a.has(this,b)?this[b]:e.call(this)}),a.core.inspectSource=function(a){return e.call(a)},f.exports=d},function(b,d,c){var a=c(2);b.exports=function(f,g){for(var b,c=a.toObject(f),d=a.getKeys(c),h=d.length,e=0;h>e;)if(c[b=d[e++]]===g)return b}},function(b,d,c){var a=c(2);b.exports=function(b){var c=a.getKeys(b),e=a.getDesc,d=a.getSymbols;return d&&a.each.call(d(b),function(a){e(b,a).enumerable&&c.push(a)}),c}},function(c,e,d){function a(c,a,b){if(!c)throw TypeError(b?a+b:a)}var b=d(2);a.def=b.assertDefined,a.fn=function(a){if(!b.isFunction(a))throw TypeError(a+" is not a function!");return a},a.obj=function(a){if(!b.isObject(a))throw TypeError(a+" is not an object!");return a},a.inst=function(a,b,c){if(!(a instanceof b))throw TypeError(c+": use the 'new' operator!");return a},c.exports=a},function(d,h,e){function f(a){try{return b(a)}catch(d){return c.slice()}}var a=e(2),g={}.toString,b=a.getNames,c="object"==typeof window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[];d.exports.get=function(d){return c&&"[object Window]"==g.call(d)?f(d):b(a.toObject(d))}}]),"undefined"!=typeof module&&module.exports?module.exports=b:"function"==typeof define&&define.amd?define(function(){return b}):c.core=b}();
-//# sourceMappingURL=es6.symbol-umd.min.js.map
+/*!
+Copyright (C) 2015 by WebReflection
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*/
+(function (Object, GOPS) {'use strict';
+
+  // (C) Andrea Giammarchi - Mit Style
+
+  if (GOPS in Object) return;
+
+  var
+    setDescriptor,
+    G = typeof global === typeof G ? window : global,
+    id = 0,
+    random = '' + Math.random(),
+    prefix = '__\x01symbol:',
+    prefixLength = prefix.length,
+    internalSymbol = '__\x01symbol@@' + random,
+    DP = 'defineProperty',
+    DPies = 'defineProperties',
+    GOPN = 'getOwnPropertyNames',
+    GOPD = 'getOwnPropertyDescriptor',
+    PIE = 'propertyIsEnumerable',
+    gOPN = Object[GOPN],
+    gOPD = Object[GOPD],
+    create = Object.create,
+    keys = Object.keys,
+    defineProperty = Object[DP],
+    defineProperties = Object[DPies],
+    descriptor = gOPD(Object, GOPN),
+    ObjectProto = Object.prototype,
+    hOP = ObjectProto.hasOwnProperty,
+    pIE = ObjectProto[PIE],
+    indexOf = Array.prototype.indexOf || function (v) {
+      for (var i = this.length; i-- && this[i] !== v;) {}
+      return i;
+    },
+    addInternalIfNeeded = function (o, uid, enumerable) {
+      if (!hOP.call(o, internalSymbol)) {
+        defineProperty(o, internalSymbol, {
+          enumerable: false,
+          configurable: false,
+          writable: false,
+          value: {}
+        });
+      }
+      o[internalSymbol]['@@' + uid] = enumerable;
+    },
+    createWithSymbols = function (proto, descriptors) {
+      var self = create(proto);
+      gOPN(descriptors).forEach(function (key) {
+        if (propertyIsEnumerable.call(descriptors, key)) {
+          $defineProperty(self, key, descriptors[key]);
+        }
+      });
+      return self;
+    },
+    copyAsNonEnumerable = function (descriptor) {
+      var newDescriptor = create(descriptor);
+      newDescriptor.enumerable = false;
+      return newDescriptor;
+    },
+    get = function get(){},
+    onlyNonSymbols = function (name) {
+      return  name != internalSymbol &&
+              !hOP.call(source, name);
+    },
+    onlySymbols = function (name) {
+      return  name != internalSymbol &&
+              hOP.call(source, name);
+    },
+    propertyIsEnumerable = function propertyIsEnumerable(key) {
+      var uid = '' + key;
+      return onlySymbols(uid) ? (
+        hOP.call(this, uid) &&
+        this[internalSymbol]['@@' + uid]
+      ) : pIE.call(this, key);
+    },
+    setAndGetSymbol = function (uid) {
+      var descriptor = {
+        enumerable: false,
+        configurable: true,
+        get: get,
+        set: function (value) {
+          setDescriptor(this, uid, {
+            enumerable: false,
+            configurable: true,
+            writable: true,
+            value: value
+          });
+          addInternalIfNeeded(this, uid, true);
+        }
+      };
+      defineProperty(ObjectProto, uid, descriptor);
+      return (source[uid] = defineProperty(
+        Object(uid),
+        'constructor',
+        sourceConstructor
+      ));
+    },
+    Symbol = function Symbol(description) {
+      if (this && this !== G) {
+        throw new TypeError('Symbol is not a constructor');
+      }
+      return setAndGetSymbol(
+        prefix.concat(description || '', random, ++id)
+      );
+    },
+    source = create(null),
+    sourceConstructor = {value: Symbol},
+    sourceMap = function (uid) {
+      return source[uid];
+    },
+    $defineProperty = function defineProp(o, key, descriptor) {
+      var uid = '' + key;
+      if (onlySymbols(uid)) {
+        setDescriptor(o, uid, descriptor.enumerable ?
+            copyAsNonEnumerable(descriptor) : descriptor);
+        addInternalIfNeeded(o, uid, !!descriptor.enumerable);
+      } else {
+        defineProperty(o, key, descriptor);
+      }
+      return o;
+    },
+    $getOwnPropertySymbols = function getOwnPropertySymbols(o) {
+      return gOPN(o).filter(onlySymbols).map(sourceMap);
+    }
+  ;
+
+  descriptor.value = $defineProperty;
+  defineProperty(Object, DP, descriptor);
+
+  descriptor.value = $getOwnPropertySymbols;
+  defineProperty(Object, GOPS, descriptor);
+
+  descriptor.value = function getOwnPropertyNames(o) {
+    return gOPN(o).filter(onlyNonSymbols);
+  };
+  defineProperty(Object, GOPN, descriptor);
+
+  descriptor.value = function defineProperties(o, descriptors) {
+    var symbols = $getOwnPropertySymbols(descriptors);
+    if (symbols.length) {
+      keys(descriptors).concat(symbols).forEach(function (uid) {
+        if (propertyIsEnumerable.call(descriptors, uid)) {
+          $defineProperty(o, uid, descriptors[uid]);
+        }
+      });
+    } else {
+      defineProperties(o, descriptors);
+    }
+    return o;
+  };
+  defineProperty(Object, DPies, descriptor);
+
+  descriptor.value = propertyIsEnumerable;
+  defineProperty(ObjectProto, PIE, descriptor);
+
+  descriptor.value = Symbol;
+  defineProperty(G, 'Symbol', descriptor);
+
+  // defining `Symbol.for(key)`
+  descriptor.value = function (key) {
+    var uid = prefix.concat(prefix, key, random);
+    return uid in ObjectProto ? source[uid] : setAndGetSymbol(uid);
+  };
+  defineProperty(Symbol, 'for', descriptor);
+
+  // defining `Symbol.keyFor(symbol)`
+  descriptor.value = function (symbol) {
+    return hOP.call(source, symbol) ?
+      symbol.slice(prefixLength * 2, -random.length) :
+      void 0
+    ;
+  };
+  defineProperty(Symbol, 'keyFor', descriptor);
+
+  descriptor.value = function getOwnPropertyDescriptor(o, key) {
+    var descriptor = gOPD(o, key);
+    if (descriptor && onlySymbols(key)) {
+      descriptor.enumerable = propertyIsEnumerable.call(o, key);
+    }
+    return descriptor;
+  };
+  defineProperty(Object, GOPD, descriptor);
+
+  descriptor.value = function (proto, descriptors) {
+    return arguments.length === 1 ?
+      create(proto) :
+      createWithSymbols(proto, descriptors);
+  };
+  defineProperty(Object, 'create', descriptor);
+
+  try { // fails in few pre ES 5.1 engines
+    setDescriptor = create(
+      defineProperty(
+        {},
+        prefix,
+        {
+          get: function () {
+            return defineProperty(this, prefix, {value: false})[prefix];
+          }
+        }
+      )
+    )[prefix] || defineProperty;
+  } catch(o_O) {
+    setDescriptor = function (o, key, descriptor) {
+      var protoDescriptor = gOPD(ObjectProto, key);
+      delete ObjectProto[key];
+      defineProperty(o, key, descriptor);
+      defineProperty(ObjectProto, key, protoDescriptor);
+    };
+  }
+
+  [
+    'iterator',           // A method returning the default iterator for an object. Used by for...of.
+    'match',              // A method that matches against a string, also used to determine if an object may be used as a regular expression. Used by String.prototype.match().
+    'replace',            // A method that replaces matched substrings of a string. Used by String.prototype.replace().
+    'search',             // A method that returns the index within a string that matches the regular expression. Used by String.prototype.search().
+    'split',              // A method that splits a string at the indices that match a regular expression. Used by String.prototype.split().
+    'hasInstance',        // A method determining if a constructor object recognizes an object as its instance. Used by instanceof.
+    'isConcatSpreadable', // A Boolean value indicating if an object should be flattened to its array elements. Used by Array.prototype.concat().
+    'unscopables',        // An Array of string values that are property values. These are excluded from the with environment bindings of the associated objects.
+    'species',            // A constructor function that is used to create derived objects.
+    'toPrimitive',        // A method converting an object to a primitive value.
+    'toStringTag'         // A string value used for the default description of an object. Used by Object.prototype.toString().
+  ].forEach(function (name) {
+    defineProperty(Symbol, name, {value: Symbol(name)});
+  });
+
+}(Object, 'getOwnPropertySymbols'));
+
+
+(function (Si, AP, SP) {
+
+  // make Arrays usable as iterators
+  // so that other iterables can copy same logic
+  if (!AP[Si]) AP[Si] = function () {
+    var i = 0, self = this;
+    return {
+      next: function next() {
+        var done = self.length <= i;
+        return done ?
+          {done: done} :
+          {done: done, value: self[i++]};
+      }
+    };
+  };
+
+  // make Strings usable as iterators
+  // to simplify Array.from and 
+  if (!SP[Si]) SP[Si] = function () {
+    var
+      fromCodePoint = String.fromCodePoint,
+      self = this,
+      i = 0,
+      length = self.length
+    ;
+    return {
+      next: function next() {
+        var
+          done = length <= i,
+          c = done ? '' : fromCodePoint(self.codePointAt(i))
+        ;
+        i += c.length;
+        return done ?
+          {done: done} :
+          {done: done, value: c};
+      }
+    };
+  };
+
+}(Symbol.iterator, Array.prototype, String.prototype));

@@ -8,7 +8,6 @@ module.exports = function(grunt) {
 		this.files.forEach(function (file) {
 			file.src.forEach(function (src) {
 				grunt.log.writeln('Running ' + src + ': ');
-				console.log(path.resolve(src.toString()))
 				require(path.resolve(src.toString()))(grunt);
 				grunt.log.writeln('-------------');
 			})
