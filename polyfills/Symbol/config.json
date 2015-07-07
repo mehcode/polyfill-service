@@ -1,16 +1,13 @@
 {
 	"browsers": {
-		"ie": "<11",
-		"firefox": "<300",
-		"opera": "<300",
-		"chrome": "<300",
-		"safari": "<300",
-		"ios_saf": "<300"
+		"ie": "7 - *",
+		"safari": "*",
+		"chrome": "< 50",
+		"firefox": "< 50",
+		"ios_saf": "*",
+		"opera": "< 25"
 	},
 	"dependencies": [],
-	"build": {
-		"minify": true
-	},
 	"license": "MIT",
 	"spec": "http://people.mozilla.org/~jorendorff/es6-draft.html#sec-symbol-objects",
 	"repo": "https://github.com/JakeChampion/core-js",
