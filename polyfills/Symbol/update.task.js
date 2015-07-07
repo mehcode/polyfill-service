@@ -3,7 +3,7 @@
 var fs = require('fs');
 var path = require('path');
 var rimraf = require('rimraf');
-var SymbolSourcePath = require.resolve('get-own-property-symbols/build/get-own-property-symbols.max.js');
+var SymbolSourcePath = require.resolve('core-js/client/modules/es6/es6.symbol/es6.symbol-umd.js');
 var SymbolPolyfillOutput = path.resolve('polyfills/Symbol');
 
 // this is not really a grunt task, but a function that is suppose
