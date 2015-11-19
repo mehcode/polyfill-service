@@ -1,31 +1,33 @@
-Object.defineProperty(Array.prototype, 'find', {
-	configurable: true,
-	value: function find(callback) {
-		if (this === undefined || this === null) {
-			throw new TypeError(this + 'is not an object');
-		}
+// Array.prototype.find - MIT License (c) 2013 Paul Miller <http://paulmillr.com>
+// For all details and docs: https://github.com/paulmillr/array.prototype.find
+// Fixes and tests supplied by Duncan Hall <http://duncanhall.net> 
+(function(globals){
+  if (Array.prototype.find) return;
 
-		if (!(callback instanceof Function)) {
-			throw new TypeError(callback + ' is not a function');
-		}
+  var find = function(predicate) {
+    var list = Object(this);
+    var length = list.length < 0 ? 0 : list.length >>> 0; // ES.ToUint32;
+    if (length === 0) return undefined;
+    if (typeof predicate !== 'function' || Object.prototype.toString.call(predicate) !== '[object Function]') {
+      throw new TypeError('Array#find: predicate must be a function');
+    }
+    var thisArg = arguments[1];
+    for (var i = 0, value; i < length; i++) {
+      value = list[i];
+      if (predicate.call(thisArg, value, i, list)) return value;
+    }
+    return undefined;
+  };
 
-		var
-		object = Object(this),
-		scope = arguments[1],
-		arraylike = object instanceof String ? object.split('') : object,
-		length = Math.max(Math.min(arraylike.length, 9007199254740991), 0) || 0,
-		index = -1,
-		element;
+  if (Object.defineProperty) {
+    try {
+      Object.defineProperty(Array.prototype, 'find', {
+        value: find, configurable: true, enumerable: false, writable: true
+      });
+    } catch(e) {}
+  }
 
-		while (++index < length) {
-			if (index in arraylike) {
-				element = arraylike[index];
-
-				if (callback.call(scope, element, index, object)) {
-					return element;
-				}
-			}
-		}
-	},
-	writable: true
-});
+  if (!Array.prototype.find) {
+    Array.prototype.find = find;
+  }
+})(this);
