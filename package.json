@@ -66,7 +66,8 @@
     "semver": "^2.3.1",
     "tsort": "0.0.1",
     "uglify-js": "^2.4.14",
-    "useragent": "^2.0.8"
+    "useragent": "^2.0.8",
+    "whatwg-fetch": "^0.10.1"
   },
   "devDependencies": {
     "batch": "^0.5.1",
