@@ -59,7 +59,7 @@
     "semver": "^2.3.1",
     "tsort": "0.0.1",
     "uglify-js": "^2.4.14",
-    "useragent": "^2.0.8",
+    "useragent": "^2.0.8"
   },
   "devDependencies": {
     "Base64": "^0.3.0",
