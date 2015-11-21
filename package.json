@@ -82,6 +82,7 @@
     "rimraf": "^2.4.0",
     "sauce-tunnel": "^2.2.3",
     "wd": "^0.3.8",
+    "weakset": "^0.2.1",
     "whatwg-fetch": "^0.10.1"
   },
   "version": "2.2.2"
