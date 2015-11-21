@@ -27,7 +27,7 @@
     "restart": "forever restart --minUptime=1000 --spinSleepTime=1000 --plain bin/polyfill-service",
     "stop": "forever stop --plain bin/polyfill-service",
     "status": "forever list | grep bin/polyfill-service",
-    "prepublish": "grunt build",
+    "postinstall": "grunt build",
     "deploy": "grunt build && haikro build && haikro deploy --commit `git rev-parse HEAD` --app",
     "deploy-qa": "npm run deploy -- ft-polyfill-service-qa",
     "deploy-prod": "npm run deploy -- ft-polyfill-service",
