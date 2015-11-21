@@ -17,6 +17,7 @@
 /polyfills/AudioContext/polyfill.js
 /polyfills/HTMLPictureElement/polyfill.js
 /polyfills/Intl/polyfill.js
+/polyfills/Intl/~locale
 /polyfills/JSON/polyfill.js
 /polyfills/Promise/polyfill.js
 /polyfills/URL/polyfill.js
