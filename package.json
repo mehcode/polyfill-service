@@ -78,6 +78,7 @@
     "grunt-simple-mocha": "^0.4.0",
     "html5shiv": "^3.7.3",
     "intl": "~1.0.0-rc-4",
+    "js-polyfills": "^0.1.12",
     "picturefill": "^3.0.0-beta1",
     "rimraf": "^2.4.0",
     "sauce-tunnel": "^2.2.3",
