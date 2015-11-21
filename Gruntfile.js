@@ -126,6 +126,7 @@ module.exports = function(grunt) {
 	grunt.registerTask("build", [
 		"clean",
 		"installcollections",
+		"updatelibrary",
 		"buildsources",
 		"clean:repo",
 		"clean:versions"
