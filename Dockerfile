@@ -1,2 +1,2 @@
-FROM heroku/nodejs
 
+FROM jakechampion/heroku-nodejs
