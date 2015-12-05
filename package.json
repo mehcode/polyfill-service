@@ -39,7 +39,6 @@
     "graphite": "0.0.6",
     "handlebars": "^1.3.0",
     "lodash": "^3.10.1",
-    "lru-cache": "^2.6.5",
     "lru-cache": "^3.0.0",
     "marked": "^0.3.3",
     "measured": "^1.0.0",
@@ -55,7 +54,7 @@
   },
   "devDependencies": {
     "Base64": "^0.3.0",
-    "array.from": "^0.2.0",
+    "array.from": "git://github.com/JakeChampion/Array.from.git#polyfill-service-changes",
     "array.of": "^0.1.0",
     "array.prototype.find": "^1.0.0",
     "array.prototype.findindex": "^1.0.0",
@@ -77,10 +76,10 @@
     "picturefill": "^3.0.0-beta1",
     "rimraf": "^2.4.0",
     "sauce-tunnel": "^2.2.3",
+    "uglify-js": "^2.4.14",
     "wd": "^0.3.8",
     "weakset": "^0.2.1",
-    "whatwg-fetch": "^0.10.1",
-    "uglify-js": "^2.4.14"
+    "whatwg-fetch": "^0.10.1"
   },
   "version": "2.2.4"
 }
