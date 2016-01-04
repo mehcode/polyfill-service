@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "Base64": "^0.3.0",
-    "array.from": "git://github.com/JakeChampion/Array.from.git#polyfill-service-changes",
+    "array.from": "^0.3.0",
     "array.of": "^0.1.0",
     "array.prototype.find": "^1.0.0",
     "array.prototype.findindex": "^1.0.0",
