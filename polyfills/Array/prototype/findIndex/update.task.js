@@ -1,5 +1,5 @@
 var installPolyfill = require('../../../../lib/installPolyfill');
 
 module.exports = function() {
-	installPolyfill('polyfills/Array/prototype/findIndex', 'array.prototype.findindex/index.js');
+	installPolyfill('polyfills/Array/prototype/findIndex', 'array.prototype.findindex/shim.js');
 };
