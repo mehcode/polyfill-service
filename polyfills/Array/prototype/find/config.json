@@ -13,6 +13,9 @@
 		"safari": "* - 7.0",
 		"firefox_mob": "3.6 - 24"
 	},
+	"build": {
+		"commonjs": true
+	},
 	"dependencies": [
 		"Object.defineProperty"
 	],
