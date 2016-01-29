@@ -1,0 +1,1 @@
+{"browsers":{"ie":"9"},"docs":"https://developer.mozilla.org/en-US/docs/Web/API/HTMLDocument","baseDir":"HTMLDocument","hasTests":false,"rawSource":"\n// HTMLDocument\nthis.HTMLDocument = this.Document;\n","minSource":"this.HTMLDocument=this.Document;","detectSource":"\"HTMLDocument\" in this"}
